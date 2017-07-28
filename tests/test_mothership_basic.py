@@ -11,8 +11,8 @@ class TestMothershipBasic(unittest.TestCase):
 		#test instansiation of mothership
 		x = 'data'
 		mom = MothershipServer()
-		worker = BasicUserParseWorker("https://www.reddit.com/user/Chrikelnel")
-		worker.send_to_mother(worker,x)
+		#worker = BasicUserParseWorker("https://www.reddit.com/user/Chrikelnel")
+		#worker.send_to_mother(worker,x)
 
 	def test_mothership_thing(self):
 		x = 1

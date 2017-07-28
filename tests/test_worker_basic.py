@@ -50,6 +50,16 @@ class TestWorkerBasic(unittest.TestCase):
 
         self.assertEqual(len_to_crawl_after, len_to_crawl_before)
 
+# tests if metadata is reset each run. Tests dynamic or static.
+    def test_worker_data_reset(self):
+        worker = BasicUserParseWorker("https://www.reddit.com/user/Chrikelnel")
+
+        worker.add_links(["https://www.reddit.com/user/Chrikelnel"])
+        len_to_crawl_after = len(worker.to_crawl)
+
+        self.assertEqual(len_to_crawl_after, 1)
+
+# Tests the ability of the crawl list to be manipulated
     def test_worker_add_links_in_crawled(self):
         worker = BasicUserParseWorker("https://www.reddit.com/user/Chrikelnel")
         worker.crawled = []
