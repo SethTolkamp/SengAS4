@@ -5,4 +5,8 @@ from mothership.base import MothershipServer
 
 
 class TestMothershipBasic(unittest.TestCase):
-    pass
+
+	def test_mothership_initialization(self):
+
+		mom = MothershipServer()
+		#test instansiation of mothership
