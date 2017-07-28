@@ -81,7 +81,15 @@ class TestWorkerBasic(unittest.TestCase):
 
         self.assertEqual(len(worker.to_crawl, worker.max_links)
 
+    def test_worker_add_links_remove_link(self):
+        
+        worker.to_crawl = []
+        worker = BasicUserParseWorker("https://www.reddit.com/user/Chrikelnel")
+        worker.to_crawl.append(["https://www.reddit.com/user/Chrikelnel"])
+        worker.to_crawl.pop
+ 
 
+        self.assertEqual(len(len(worker.tocrawl, 0)
 
 
     
