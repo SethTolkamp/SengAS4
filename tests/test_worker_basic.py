@@ -57,7 +57,7 @@ class TestWorkerBasic(unittest.TestCase):
         worker.add_links(["https://www.reddit.com/user/Chrikelnel"])
         len_to_crawl_after = len(worker.to_crawl)
 
-        self.assertEqual(len_to_crawl_after, 1)
+        self.assertEqual(len_to_crawl_after, 3)
 
 # Tests the ability of the crawl list to be manipulated
     def test_worker_add_links_in_crawled(self):
