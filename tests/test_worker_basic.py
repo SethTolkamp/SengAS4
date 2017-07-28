@@ -73,7 +73,6 @@ class TestWorkerBasic(unittest.TestCase):
         self.assertEqual(len_to_crawl_after, len_to_crawl_before)
 
 
-# check max length
     def test_worker_add_links_maxLength(self):
         worker = None
         worker = BasicUserParseWorker("https://www.reddit.com/user/Chrikelnel")
@@ -83,8 +82,6 @@ class TestWorkerBasic(unittest.TestCase):
 
         self.assertEqual(len(worker.to_crawl, worker.max_links))
 
-
-# test list
     def test_worker_add_links_remove_link(self):
         
         worker.to_crawl = []
@@ -94,4 +91,13 @@ class TestWorkerBasic(unittest.TestCase):
  
 
         self.assertEqual(len(len(worker.tocrawl, 0)
+
+
+    
+
+
+
+
+
+
 
