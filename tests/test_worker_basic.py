@@ -90,7 +90,7 @@ class TestWorkerBasic(unittest.TestCase):
         worker.to_crawl.pop()
  
 
-        self.assertEqual(len(worker.tocrawl), 0)
+        self.assertEqual(len(worker.to_crawl), 0)
 
 
     
