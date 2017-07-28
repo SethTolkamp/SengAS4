@@ -80,7 +80,7 @@ class TestWorkerBasic(unittest.TestCase):
         worker.add_links(["https://www.reddit.com/user/Chrikelnel"])
         worker.add_links(["https://www.reddit.com/user/Chrikelnel"])
 
-        self.assertEqual(len(worker.to_crawl, worker.max_links))
+        self.assertEqual(worker.to_crawl, worker.max_links)
 
     def test_worker_add_links_remove_link(self):
         
@@ -90,7 +90,7 @@ class TestWorkerBasic(unittest.TestCase):
         worker.to_crawl.pop()
  
 
-        self.assertEqual(len(len(worker.tocrawl), 0))
+        self.assertEqual(len(worker.tocrawl), 0)
 
 
     
