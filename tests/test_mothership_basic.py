@@ -10,8 +10,11 @@ class TestMothershipBasic(unittest.TestCase):
 	def test_mothership_initialization(self):
 		#test instansiation of mothership
 		x = 'data'
+
 		originalTarget = 12
 		mom = MothershipServer()
+		mom.port = 5000
+		mom.host = 'localhost'
 		worker = BasicUserParseWorker("https://www.reddit.com/user/Chrikelnel")
 		worker.send_to_mother(x,originalTarget)
 
