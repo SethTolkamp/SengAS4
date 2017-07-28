@@ -68,7 +68,7 @@ class TestWorkerBasic(unittest.TestCase):
         len_to_crawl_before = len(worker.to_crawl)
         worker.add_links(["https://www.reddit.com/user/Chrikelnel"])
         len_to_crawl_after = len(worker.to_crawl)
-        len_to_crawl_before = len_to_crawl_before + 3;
+        len_to_crawl_before = len_to_crawl_before + 1;
 
         self.assertEqual(len_to_crawl_after, len_to_crawl_before)
 
